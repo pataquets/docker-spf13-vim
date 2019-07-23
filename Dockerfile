@@ -22,7 +22,7 @@ RUN \
   sed -i 's/amirh\/HTML-AutoCloseTag/vim-scripts\/HTML-AutoCloseTag/g' \
     /root/.vimrc.bundles && \
   grep "vim-scripts/HTML-AutoCloseTag" /root/.vimrc.bundles && \
-  vim "+set nomore" "+BundleInstall!" "+BundleClean" "+qall"
+  vim "+set nomore" "+PluginInstall!" "+PluginClean" "+qall"
 
 ENTRYPOINT [ "vim" ]
 CMD [ "/src/" ]
